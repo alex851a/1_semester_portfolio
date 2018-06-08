@@ -1,22 +1,61 @@
-/* Navigation */
-
-nav {
-
-    text-align: center;
+body {
+    font-family: 'Roboto', sans-serif;
+    background-image: url(images/background2.png);
+    background-repeat: no-repeat;
+    background-size: auto;
+    z-index: 1;
+    margin-right: 7%;
+    margin-left: 7%;
 }
+
+header,
+a {
+    color: black;
+    text-decoration: none;
+    text-align: center;
+    font-size: 1.2em;
+}
+
+footer {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    background-color: rgba(255, 255, 255, 0.2);
+    width: 100%;
+    text-align: center;
+    font-weight: bold;
+}
+
+
+
+/* Navigation */
 
 nav ul {
     display: flex;
     justify-content: space-evenly;
     flex-direction: row;
     list-style: none;
-    padding-left: 0;
-
+    text-align: left;
 }
 
 nav ul li {
     position: relative;
     padding-right: 2em;
+    font-size: 0.85em;
+}
+
+.dropdown {
+    border-radius: 20px;
+    background-color: rgba(255, 255, 255, 0.4);
+    padding-bottom: 10px;
+    padding-top: 10px;
+    padding-right: 20px;
+    padding-left: 20px;
+}
+
+.dropdown,
+h2 {
+    text-align: center;
 }
 
 .dropdown > ul {
@@ -31,15 +70,54 @@ nav ul li {
 
 .dropdown > ul li {
     white-space: nowrap;
-    padding: 0 2em;
+    padding-bottom: 1em;
+
 }
 
 .dropdown-content li {
     justify-content: flex-start;
+
 }
 
 .dropdown:hover > ul {
     display: block;
+    width: auto;
+}
+
+/* Navigation slut */
+
+/* Bio */
+
+#ommig .wrapper {
+    display: flex;
+    flex-wrap: wrap;
+
+}
+
+img {
+    border-radius: 50%;
+    width: 20vw;
+    height: 20vw;
+    margin: 2px;
+    text-align: center;
+}
+
+#ommig .box {
+    display: flex;
+    flex-grow: 1;
+    flex-basis: 600px;
+    flex-direction: column;
+    margin: 6px;
+    list-style: none;
+
+}
+
+}
+
+#ommig .boxcontent {
+    flex-grow: 1;
+    flex-basis: 200px;
+
 }
 
 /* YouTube */
